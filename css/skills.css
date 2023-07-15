@@ -73,10 +73,10 @@
     }
 
     .skills__box {
-        /* width: 9.75rem; */
-        height: 7.375rem;
-        /* margin: 0.938rem;  */
-        padding-bottom: 0.25rem; 
+        flex-basis: 45%;
+        box-sizing: border-box;
+        padding: 10px;
+        justify-content: start;
     }
 
     .skills__box:hover {
