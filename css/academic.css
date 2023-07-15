@@ -123,7 +123,7 @@
         width: 18rem;
         height: 6rem;
         margin-bottom: 11rem;
-        margin-left: 1.25rem;
+        align-self: center;
     }
 
     .academic__courses__item__img {
