@@ -148,14 +148,10 @@
         align-self: center;
     }
 
-    .experience__info-container {
+    .experience__info-container, .experience__info-container-2  {
         margin-top: 0.5rem;
         padding: 1rem;
-    }
-
-    .experience__info-container-2 {
-        margin-top: 0.5rem;
-        padding: 1rem;
+        align-self: center;
     }
 
     .experience__title {
