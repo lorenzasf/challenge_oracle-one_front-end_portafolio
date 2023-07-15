@@ -1,0 +1,103 @@
+.about{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #EAF2FD;
+    padding-left: 5.75rem;
+    padding-right: 5.75rem;
+}
+
+.about__container{
+    
+    text-align: left;
+    padding-right: 25rem;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+}
+
+.about__title{
+    font-family: Raleway;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.375rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #464646;
+
+}
+
+.about__paragraph{
+    text-align: left;
+    margin-bottom: 1.5rem;
+    line-height: 1.174rem;
+}
+
+.about__signature{
+    justify-content: left;
+}
+
+.about__signature:hover {
+    animation: shake 0.5s;
+}
+  
+  @keyframes shake {
+    0% { transform: translate(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 0); }
+    20%, 40%, 60%, 80% { transform: translate(5px, 0); }
+    100% { transform: translate(0); }
+} 
+
+
+/*--------------------------------------------------------------------------------------*/
+  /* Media query para teléfono móvil */
+@media only screen and (max-width: 768px) {
+    .about {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .about__container {
+        padding-right: 1rem;
+    }
+
+    .about__title {
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+
+    .about__paragraph {
+        margin-bottom: 1rem;
+        line-height: 1.028rem;
+    }
+
+    .about__signature {
+        justify-content: center;
+    }
+}
+
+/* Media query para tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .about {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .about__container {
+        padding-right: 0;
+    }
+
+    .about__title{
+        font-size: 1.375rem;
+    }
+
+    .about__paragraph {
+        font-size: 1rem;
+        line-height: 1.028rem;
+    }
+
+    .about__signature {
+        justify-content: center;
+    }
+    
+}
+

@@ -1,0 +1,178 @@
+.formcontacto{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color:#EAF2FD;
+    height: 49.25rem;
+} 
+
+.formcontacto__contacto{
+    display:flex;
+    padding: 4rem 0rem 0rem 0rem;
+} 
+
+.formcontacto__img{
+    margin-top: 4.063rem;
+    height: 85%;
+}
+
+.formcontacto__img:hover{
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.formcontacto__title{
+    margin-top: 1.875rem;
+    padding: 2.188rem;
+    font-family: Raleway;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.375rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #464646;
+}
+
+.formcontacto__subtext{
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.188rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #464646;
+    margin-left: 2.188rem;
+}
+
+.formcontacto__form{
+    display: flex;
+    flex-direction: column;
+    width: 41rem;
+    margin: 2rem;
+}
+
+.formcontacto__input{
+    width: 37.5rem; 
+    height: 3.5rem;
+    padding: 0.5rem 0rem 0rem 0rem;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+    border: none;
+}
+
+.formcontacto__textarea{
+    width: 37.5rem;
+    height: 8.313rem;
+    padding: 1rem 0rem 0rem 0rem;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
+    border: none;
+}
+
+.formcontacto__boton{
+    width: 9.375rem;
+    height: 3.125rem;
+    padding: 1rem;
+    margin: 0.625rem;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+    border: none;
+}
+
+.formcontacto__boton:hover{
+    cursor: pointer;
+    box-shadow: #464646  0 0 5px;
+}
+
+/*------------------------------------------------------------------*/
+
+/* Media query para teléfono móvil */
+@media only screen and (max-width: 768px) {
+    .formcontacto {
+     height: 45rem;  
+    }
+
+    .formcontacto__contacto {
+        flex-direction: column;
+        padding: 1rem; 
+    }
+
+    .formcontacto__img {
+        display: none;
+        margin-top: 2.063rem;
+        height: 60%;
+    }
+
+    .formcontacto__title {
+        margin-top: 1.25rem;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        padding-left: 0rem;
+        margin-left: 1rem;
+    }
+
+    .formcontacto__subtext {
+        width: 18.5rem;
+        margin-left: 1rem;
+    }
+
+    .formcontacto__form {
+        width: 18.5rem;
+        height: 38.188rem;
+        margin: 0.625rem;
+
+    }
+
+    .formcontacto__input {
+        width: 18.5rem;
+        height: 3.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+    }
+
+    .formcontacto__textarea {
+        width: 18.5rem;
+        height: 6.313rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .formcontacto__boton {
+        width: 10.000rem;
+        height: 3.125rem;
+        padding: 1rem;
+        margin: 0.625rem;
+    }
+}
+
+/* Media query para tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .formcontacto__img {
+        display: none;
+      }
+    
+      .formcontacto__contacto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+      }
+
+      .formcontacto__title{
+        padding-left: 0rem;
+        font-size: 1.375rem;
+      }
+    
+      .formcontacto__subtext {
+        margin-left: 0;
+        margin-bottom: 0.6rem
+      }
+    
+      .formcontacto__form {
+        width: auto;
+        margin: 0;
+      }
+}

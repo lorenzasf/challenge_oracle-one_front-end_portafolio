@@ -1,0 +1,66 @@
+.footer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 5.75rem;
+    padding-right: 5.75rem;
+
+}
+
+.footer__rodapie{
+    height: 6.375rem;
+    padding: 2rem;
+    margin: 0.625rem;
+    text-align: center;
+}
+  
+.copyright{
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.188rem;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+/* Media query para teléfono móvil */
+@media only screen and (max-width: 768px) {
+    .footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .footer__rodapie {
+        height: 5.375rem;
+        padding: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    .copyright {
+        font-size: 0.875rem;
+        line-height: 1.063rem;
+    }
+}
+
+
+
+/* Media query para tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+      .footer__rodapie {
+        margin: 0.3125rem;
+    }
+    
+      .copyright {
+        font-size: 0.875rem;
+        line-height: 1.063rem;
+    }
+    
+}

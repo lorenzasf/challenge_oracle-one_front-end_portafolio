@@ -1,0 +1,167 @@
+.title{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 5.75rem;
+    margin-right: 5.75rem;
+    margin-bottom: 1rem; 
+}
+
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: #464646;
+    text-align:justify;
+    height: 26.563rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.title__profile{
+    width: 23rem;
+    height: 23rem;
+    margin-bottom: 6rem;
+    transition: transform 0.5s;
+}
+
+.title__profile:hover {
+    transform: rotate(360deg);
+  }
+
+.title__bio{
+    font-size: 3.25rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 1.5rem;
+
+
+    position: relative;
+    display: inline-block;
+}  
+
+.title__bio::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #292929;
+    text-shadow: 0 0 5px #4e5050,
+                 0 0 10px #434343,
+                 0 0 20px #4b4b4b,
+                 0 0 30px #3b3c3c,
+                 0 0 40px #00c6ff,
+                 0 0 55px #00c6ff,
+                 0 0 75px #2a7ae4;
+    opacity: 0;
+    animation: neon-blink 3s ease-in-out infinite; 
+}
+  
+  @keyframes neon-blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+.title__subsection{
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.375rem;
+    line-height: 1.614rem;
+}
+
+.title__network{
+    display: flex;
+    text-align: left;
+}
+
+.title__network__item{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 0rem;
+    margin-right: 1.25rem;
+}
+
+
+/*---------------------------------------------------------------*/
+
+/* Media query para teléfono móvil */
+@media only screen and (max-width: 768px) {
+  .title {
+      margin-left: 1rem;
+      margin-right: 1rem;
+ 
+  }
+
+  .title__div {
+      flex-direction: column;
+      height: auto;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+  } 
+
+  .title__profile {
+      width: 6.125rem;
+      height: 6.125rem;
+      margin-bottom: 4rem;
+      margin-right:18.75rem;
+  }
+
+  .title__bio {
+      font-size: 1.375rem;
+      margin-bottom: 1rem;
+  }
+
+  .title__subsection {
+      font-size: 0.875rem;
+      line-height: 1.028rem;
+      padding-right: 1rem;
+  }
+
+  .title__network__item {
+      font-size: 0.875rem;
+      margin-right: 1rem;
+  }
+}
+
+
+
+/* Media query para tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .title {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 13.125rem;
+  }
+
+  .title__profile {
+    margin-bottom: 5rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .title__bio {
+    font-size: 1.375rem;
+  }
+
+  .title__subsection {
+    font-size: 1rem;
+    line-height: 1.174rem;
+  }
+
+  .title__network__item {
+    margin-right: 2rem;
+  }
+}
