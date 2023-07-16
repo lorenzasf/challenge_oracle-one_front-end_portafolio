@@ -94,8 +94,9 @@
     }
 
     .formcontacto__contacto {
-        flex-direction: column;
+        flex-direction: column; 
         padding: 1rem; 
+        align-items: center;
     }
 
     .formcontacto__img {
@@ -121,7 +122,7 @@
         width: 18.5rem;
         height: 38.188rem;
         margin: 0.625rem;
-
+        align-items: center;
     }
 
     .formcontacto__input {
